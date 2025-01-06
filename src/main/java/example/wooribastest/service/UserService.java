@@ -20,4 +20,11 @@ public class UserService {
         }
         return false;
     }
+    public String getRole(UserForm dto) {
+        User user = userRepository.findByUserid(dto.getUserid());
+        if (user != null) {
+            return user.getRole();
+        }
+        return null;
+    }
 }

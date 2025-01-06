@@ -71,7 +71,7 @@ export default {
 
         // 요청 성공 시 처리
         if (response.status === 200) {
-          alert("로그인 성공!"); // 성공 메시지 표시
+          alert(response.data); // 성공 메시지 표시
           // TODO: 로그인 성공 후 페이지 이동 또는 토큰 저장 로직 추가 가능
         }
       } catch (error) {

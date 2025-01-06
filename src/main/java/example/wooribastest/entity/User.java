@@ -18,7 +18,8 @@ public class User {
   private String userid;
   @Column
   private String password;
-
+  @Column
+  private String role;
 
 
 }

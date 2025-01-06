@@ -14,8 +14,9 @@ public class UserForm {
     private Long id;
     private String userid;
     private String password;
+    private String role;
 
     public User toEntity() {
-        return new User(id,userid,password);
+        return new User(id,userid,password,role);
     }
 }
