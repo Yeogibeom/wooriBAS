@@ -47,10 +47,10 @@ public class LoginController {
         // 사용자 정보가 없거나 비밀번호가 틀린 경우
         return ResponseEntity.status(401).body("Login Failed: Invalid Credentials");
 
-    }
-    @GetMapping("/")
-    public String home() {
-        return "welcome";
-    }
+}
+@GetMapping("/")
+public String home() {
+    return "welcome";
+}
 
 }
